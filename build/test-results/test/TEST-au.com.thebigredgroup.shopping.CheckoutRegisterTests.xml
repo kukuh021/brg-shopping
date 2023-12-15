@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="au.com.thebigredgroup.shopping.CheckoutRegisterTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-15T10:55:29" hostname="VSPC2GP55K" time="0.02">
+  <properties/>
+  <testcase name="testDoubleAppleTVDiscount" classname="au.com.thebigredgroup.shopping.CheckoutRegisterTests" time="0.018"/>
+  <testcase name="testHDMIDiscount" classname="au.com.thebigredgroup.shopping.CheckoutRegisterTests" time="0.001"/>
+  <testcase name="testDoubleHDMIDiscount" classname="au.com.thebigredgroup.shopping.CheckoutRegisterTests" time="0.0"/>
+  <testcase name="testIpadDiscount" classname="au.com.thebigredgroup.shopping.CheckoutRegisterTests" time="0.001"/>
+  <testcase name="testAppleTVDiscount" classname="au.com.thebigredgroup.shopping.CheckoutRegisterTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

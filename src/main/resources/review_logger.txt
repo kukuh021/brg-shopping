@@ -1,0 +1,36 @@
+public class Logger {
+    // it's better to expose directly as a instance void / procedure
+    // the logic can be implemented directly under each procedure
+    // e.g public void debug(String message) { log("DEBUG: " + text); }
+    // so the caller only need to import this class e.g Logger.getInstance().debug("hello world")
+    public static final int DEBUG_LEVEL = 0;
+    public static final int INFO_LEVEL = 1;
+    public static final int ERROR_LEVEL = 2;
+
+    public String fileName = "/tmp/output.log";
+    private final FileWriter writer;
+    private final ArrayList < String > logs = new ArrayList < String > ();
+
+    // this would be better to instantiate as singleton 
+    // as it only need to create one FileWriter instance
+    public Logger() throws IOException {
+        writer = new FileWriter(fileName);
+        logs.add("Initialised log\n");
+    }
+    private void log(String text) throws IOException {
+        logs.add(text);
+        writer.write(logs.get(logs.size() - 1));
+        writer.flush();
+    }
+
+    // the lines below can be removed
+    public void log(int level, String text) throws IOException {
+        if (level == DEBUG_LEVEL) {
+            log("DEBUG: " + text);
+        } else if (level == INFO_LEVEL) {
+            log("INFO: " + text);
+        } else if (level == ERROR_LEVEL) {
+            log("ERROR: " + text);
+        }
+    }
+}

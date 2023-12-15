@@ -1,0 +1,4 @@
+ipad,Super Ipad,649.99
+macbookpro,MacBook Pro,1499.99
+appletv,Apple TV,209.50
+hdmiadapter,HDMI Adapter,130.00
