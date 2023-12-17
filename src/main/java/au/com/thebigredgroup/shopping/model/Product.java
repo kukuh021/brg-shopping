@@ -24,6 +24,6 @@ public class Product {
         return price;
     }
     public Product clone() {
-        return new Product(this.sku, this.name, new Price(this.price.getAmount()));
+        return new Product(this.sku, this.name, new Price(this.price.getAmount(),this.price.getPriceRule()));
     }
 }

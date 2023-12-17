@@ -56,7 +56,6 @@ public class CheckoutRegisterTests {
     public void testHDMIDiscount() {
         CheckoutRegister checkoutRegister = new CheckoutRegister();
         checkoutRegister.read("macbookpro");
-        checkoutRegister.read("hdmiadapter");
         checkoutRegister.read("ipad");
         
         Price total = checkoutRegister.total();
@@ -67,10 +66,8 @@ public class CheckoutRegisterTests {
     public void testDoubleHDMIDiscount() {
         CheckoutRegister checkoutRegister = new CheckoutRegister();
         checkoutRegister.read("macbookpro");
-        checkoutRegister.read("hdmiadapter");
         checkoutRegister.read("ipad");
         checkoutRegister.read("macbookpro");
-        checkoutRegister.read("hdmiadapter");
         checkoutRegister.read("ipad");
         
         Price total = checkoutRegister.total();

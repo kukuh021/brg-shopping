@@ -10,7 +10,7 @@ public class App {
         checkoutRegister.read("appletv");
         checkoutRegister.read("hdmiadapter");
 
-        System.out.println("SKUs Read: appletv, appletv, appletv, hdmiadapter");
+        System.out.printf("SKUs Read: %s%n", checkoutRegister.productSkus());
         System.out.printf("Total: %s%n", checkoutRegister.total().getAmount());
 
         checkoutRegister = new CheckoutRegister();
@@ -22,15 +22,14 @@ public class App {
         checkoutRegister.read("ipad");
         checkoutRegister.read("ipad");
 
-        System.out.println("SKUs Read: appletv, ipad, ipad, appletv, ipad, ipad, ipad");
+        System.out.printf("SKUs Read: %s%n", checkoutRegister.productSkus());
         System.out.printf("Total: %s%n", checkoutRegister.total().getAmount());
 
         checkoutRegister = new CheckoutRegister();
         checkoutRegister.read("macbookpro");
-        checkoutRegister.read("hdmiadapter");
         checkoutRegister.read("ipad");
 
-        System.out.println("SKUs Read: macbookpro, hdmiadapter, ipad");
+        System.out.printf("SKUs Read: %s%n", checkoutRegister.productSkus());
         System.out.printf("Total: %s%n", checkoutRegister.total().getAmount());
     }
 }

@@ -32,7 +32,7 @@ public class ProductStore implements IProductStore {
                 this.products = Files.lines(Paths.get(resource.toURI()))
                     .map(item -> item.split(","))
                     .map(val -> new Product(val[0], val[1]
-                        , new Price(Double.parseDouble(val[2]))))
+                        , new Price(Double.parseDouble(val[2]),val[3])))
                     .collect(Collectors.toList());
             } catch (IOException e) {
                 e.printStackTrace();

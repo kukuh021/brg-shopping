@@ -6,6 +6,7 @@ public interface ICheckoutRegister {
 
     void read(String sku);
 
+    String productSkus();
     Price total();
 
 }
